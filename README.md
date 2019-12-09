@@ -8,6 +8,7 @@ Resources:
 - [Commands](#commands)
 - [If else](#if_else)
 - [Else if](#else_if)
+- [Arrays in go](#arrays) - [For range com arrays](#For-range-com-arrays)
 
 # My first Golang program
 
@@ -159,3 +160,53 @@ func main() {
 	}
 }
 ```
+
+### Arrays in go
+
+Arrays possuem tamanho limitado e tipo fixo diferente de linguagens dinamicas que podem conter tipos diferentes de dados.
+
+São definidos conform a estrutura: nome [tamanho] tipo {e1,e2,e3,e4}
+
+```go
+var notas [3]int
+notas[0], notas[1], notas[2] = 4.5, 3.11, 5.3
+```
+
+#### Slices
+
+Slices são um tipo comum usado em Go, eles são como diz a nomenclatura, um recorte de um
+array.
+
+```go
+var slice1 []int
+	slice1 = append(slice1, 4, 5, 6)
+```
+
+Lembrando que o append sempre retorna uma nova referência para o mesmo objeto
+
+#### For range com arrays
+
+É possível percorrer arrays com o auxílio da sintaxe range:
+
+```go
+for index, value :=  range myarray {
+	fmt.Println(index, value)
+}
+```
+
+### Maps
+
+A estrutura Map de chave e valor, precisa ser inicializada, logo a forma correta de se criar um map em go é:
+
+```go
+aprovados := make(map[int]string)
+	aprovados[123456789] = "Joao"
+	aprovados[123456782] = "Maria"
+```
+
+### Funções
+
+Funções em Go são extremamente simples em sua forma básica. Elas podem:
+
+- Retornar valores ou não retornar valores
+- Rternoar múltiplos valores
