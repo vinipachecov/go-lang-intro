@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func notaParaConceito(n float64) string {
-	switch nota {
+	switch {
 	case n >= 9 && n <= 10:
 		return "A"
 	case n >= 8 && n <= 7:

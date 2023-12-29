@@ -13,5 +13,6 @@ func main() {
 	}
 
 	delete(aprovados, 123456789)
+	fmt.Println("aprovados")
 	fmt.Println(aprovados)
 }

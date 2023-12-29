@@ -23,7 +23,8 @@ func main() {
 		Nome string
 	}
 
-	p1 := Pessoa{"João"}
+	p1 := Pessoa{
+		Nome: "João"}
 	p2 := Pessoa{"João"}
 	fmt.Println("Pessoas", p1 == p2)
 }
